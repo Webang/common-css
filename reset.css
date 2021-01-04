@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333;
+  line-height: 1;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+}
+
+body, input, select, textarea, button, select {
+  font-style: normal;
+  font-family: 'PingFang SC', Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, Arial, sans-serif;
+  vertical-align: baseline;
+}
+
+input, select, textarea, button, select {
+  font-size: 100%;
+  outline: none;
+  background: transparent;
+  border: 0;
+}
+
+input {
+  -webkit-appearance: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+img, fieldset {
+  border: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size:100%;
+  font-weight:normal;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
