@@ -75,3 +75,97 @@
 .ui-fs-xxl {
   font: 20px;
 }
+
+// 常用边距
+@commonRect: 5px, 10px, 15px;
+@commonRectProp: sm, md, l;
+@commonRectLen: length(@commonRect);
+
+.ui-mb-sm {
+  margin-bottom: 5px;
+}
+.ui-mb-md {
+  font: 14px;
+  margin-bottom: 10px;
+}
+.ui-mb-l {
+  margin-bottom: 15px;
+}
+
+// 常用的边距 & 行高 & 字体大小
+.generateCommon(@n, @i: 0) when (@i =< @n) {
+  .m-@{i} {
+    margin: @i * 1px !important;
+  }
+  .mb-@{i} {
+    margin-bottom: @i * 1px !important;
+  }
+  .mt-@{i} {
+    margin-top: @i * 1px !important;
+  }
+  .ml-@{i} {
+    margin-left: @i * 1px !important;
+  }
+  .mr-@{i} {
+    margin-right: @i * 1px !important;
+  }
+  .m-n@{i} {
+    margin: @i * -1px !important;
+  }
+  .mb-n@{i} {
+    margin-bottom: @i * -1px !important;
+  }
+  .mt-n@{i} {
+    margin-top: @i * -1px !important;
+  }
+  .ml-n@{i} {
+    margin-left: @i * -1px !important;
+  }
+  .mr-n@{i} {
+    margin-right: @i * -1px !important;
+  }
+  .p-@{i} {
+    padding: @i * 1px !important;
+  }
+  .pb-@{i} {
+    padding-bottom: @i * 1px !important;
+  }
+  .pt-@{i} {
+    padding-top: @i * 1px !important;
+  }
+  .pl-@{i} {
+    padding-left: @i * 1px !important;
+  }
+  .pr-@{i} {
+    padding-right: @i * 1px !important;
+  }
+  .lh-@{i} {
+    line-height: @i * 1px !important;
+  }
+  .generateCommon(@n, @n + 1);
+}
+.generateCommon(50);
+
+// 文字省略
+.ui-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 颜色
+.ui-color-primary {
+  color: #000;
+}
+.ui-color-warn {
+  color: #f37b1d;
+}
+.ui-color-error {
+  color: red;
+}
+.ui-color-success {
+  color: #07c160;
+}
+.ui-color-gray {
+  color: #969799;
+}
