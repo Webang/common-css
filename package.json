@@ -1,0 +1,27 @@
+{
+  "name": "common-css",
+  "version": "1.0.0",
+  "description": "extract some common css with css modifier",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./build/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Webang/common-css.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Webang/common-css/issues"
+  },
+  "homepage": "https://github.com/Webang/common-css#readme",
+  "devDependencies": {
+    "less": "^4.1.0"
+  }
+}

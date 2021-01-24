@@ -24,7 +24,6 @@
   flex: 1;
 }
 
-
 // 文本对其方式
 .ui-t-center {
   text-align: center;
@@ -60,6 +59,20 @@
   cursor: pointer;
 }
 
+// 主要的颜色
+each({
+  primary: #000;
+  second: #292e3e;
+  warn: #f37b1d;
+  error: #ee0a24;
+  success: #07c160;
+  gray: #969799;
+}, {
+  .ui-color-@{key} {
+    color: @value;
+  }
+})
+
 // 字体大小
 each({
   xs: 12px;
@@ -67,23 +80,9 @@ each({
   md: 16px;
   l: 18px;
   xl: 20px;
-  xxl: 24px;
 }, {
   .ui-fs-@{key} {
-    font-size: @{value};
-  }
-})
-
-// 主要的颜色
-each({
-  primary: #000;
-  warn: #f37b1d;
-  error: red;
-  success: #07c160;
-  gray: #969799;
-}, {
-  .ui-color-@{key} {
-    color: @{value};
+    font-size: @value;
   }
 })
 
@@ -93,6 +92,7 @@ each({
   sm: 10px;
   md: 15px;
   l: 20px;
+  xl: 25px;
 }, {
   .ui-m-@{key} {
     margin: @value;
