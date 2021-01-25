@@ -1,6 +1,6 @@
 {
   "name": "@webang/common-css",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "extract some common css with css modifier",
   "main": "index.js",
   "private": false,
