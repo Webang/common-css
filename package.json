@@ -1,11 +1,13 @@
 {
-  "name": "common-css",
+  "name": "@webang/common-css",
   "version": "1.0.0",
   "description": "extract some common css with css modifier",
   "main": "index.js",
+  "private": false,
   "directories": {
     "example": "example"
   },
+  "files": ["lib", "src", "README.md"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./build/build"
